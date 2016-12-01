@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Clock With JavaScript</title>
+	<meta name="description" content="Display Live Clock With JavaScript | نمایش ساعت با جاوا اسکریپت"/>
+
+    <style>
+        /*
+        This File Was Coded By Amin Arjmand | Email: aminarj2000@gmail.com | Site: aminarjmand.com | Github Profile : https://github.com/sibche2013
+        */
+        body {
+            background-color: #f1f1f1;
+        }
+
+        .board, button {
+            display: block;
+            padding: 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(0, 200, 81);
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .board:hover, button:hover {
+            transition: 0.2s;
+            box-shadow: inset 0 0 50px #1c8a1f;
+        }
+
+        .backTo {
+            background-color: rgb(255, 200, 0);
+            margin: auto;
+            border-radius: 30px 3px;
+        }
+
+        .backTo:hover {
+            box-shadow: inset 0 20px 50px rgb(255, 165, 0);
+        }
+
+        .clock {
+            background-color: rgb(40, 255, 61);
+            border-radius: 50%;
+            height: 90px;
+            margin: auto;
+            border: 2px solid #3a6a00;
+        }
+
+        .clock:hover {
+            box-shadow: inset 0 20px 50px rgb(253, 255, 31);
+
+        }
+
+        h1,p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="board">
+    <h1>Live Clock !</h1>
+    <p>Click On Clock For Stop & ReStart Clock</p>
+    <button class="clock" onclick="toggleClock();" id="cas"></button>
+</div>
+<button class="backTo" onclick="history.back();">Back To Previous Page</button>
+<script src="JsClock.js"></script>
+</body>
+</html>
