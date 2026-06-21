@@ -70,6 +70,9 @@ The project is completely static. To run it, simply clone the repository and ope
 ```
 
 
+---
+⭐️ *If you found this dashboard layout useful, please give this repository a star! 
 
-⭐️ *If you found this dashboard layout useful, please give this repository a star! / اگر این داشبورد برای شما مفید بود، لطفا با دادن ستاره از آن حمایت کنید!*
+
+⭐️ *اگر این مخزن برای شما مفید بود، لطفا با دادن ستاره از آن حمایت کنید!
 
