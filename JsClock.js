@@ -1,27 +1,36 @@
-        /*
-        This File Was Coded By Amin Arjmand | Email: aminarj2000@gmail.com | Site: aminarjmand.com | Github Profile : https://github.com/sibche2013
-        */
-		
-    //Live Clock , Update Clock Every 1 Second
-    var clock = setInterval(function () {
-        jsClock();
-    }, 1000)
+/* 
+Developed by Amin Arjmand
+Email: aminarj2000@gmail.com | Site: aminarjmand.com | GitHub: @sibche2013 
+*/
 
-    //Clock Function
-    function jsClock() {
-        var date = new Date();
-        document.getElementById("cas").innerHTML = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
-    }
+let clockInterval;
+const clockElement = document.getElementById("cas");
 
-    //Stop & Start Clock Function
-    function toggleClock() {
-        if (clock > 0) {
-            clearInterval(clock);
-            //clearInterval Only Stop The Work, We Should 0 Clock OurSelf
-            clock = 0;
-        } else {
-            setInterval(function () {
-                jsClock();
-            }, 1000)
-        }
+// Run clock immediately on load
+jsClock();
+startClock();
+
+function jsClock() {
+    const date = new Date();
+    const hours = String(date.getHours()).padStart(2, '0');
+    const minutes = String(date.getMinutes()).padStart(2, '0');
+    const seconds = String(date.getSeconds()).padStart(2, '0');
+    
+    clockElement.innerHTML = `${hours}:${minutes}:${seconds}`;
+}
+
+function startClock() {
+    clockInterval = setInterval(jsClock, 1000);
+}
+
+function toggleClock() {
+    if (clockInterval) {
+        clearInterval(clockInterval);
+        clockInterval = null;
+        clockElement.classList.add("stopped");
+    } else {
+        jsClock(); // Update immediately on resume
+        startClock();
+        clockElement.classList.remove("stopped");
     }
+}
