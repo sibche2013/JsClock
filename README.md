@@ -67,7 +67,7 @@ The project is completely static. To run it, simply clone the repository and ope
 ```text
 ├── index.html   # HTML Structure & CSS Styles
 └── JsClock.js   # Main JavaScript Clock Controller
-
+```
 
 
 ---
