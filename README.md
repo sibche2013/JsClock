@@ -67,3 +67,9 @@ The project is completely static. To run it, simply clone the repository and ope
 ```text
 ├── index.html   # HTML Structure & CSS Styles
 └── JsClock.js   # Main JavaScript Clock Controller
+
+
+
+---
+⭐️ *If you found this dashboard layout useful, please give this repository a star! / اگر این داشبورد برای شما مفید بود، لطفا با دادن ستاره از آن حمایت کنید!*
+
